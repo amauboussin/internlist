@@ -20,4 +20,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', index, name='index'),
+    url(r'jobs/?$', all_jobs_json, name='all_jobs_json')
 ]
